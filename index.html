@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit CRUD App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>Fruit CRUD App</h1>
+
+    <!-- Create Form -->
+    <form id="create-form">
+        <label for="create-name">Fruit Name:</label>
+        <input type="text" id="create-name" name="name" required>
+        <button type="submit">Add Fruit</button>
+    </form>
+
+    <!-- Update Form -->
+    <form id="update-form">
+        <label for="update-id">Fruit ID to Update:</label>
+        <input type="text" id="update-id" name="id" required>
+        <label for="update-name">New Fruit Name:</label>
+        <input type="text" id="update-name" name="name" required>
+        <button type="submit">Update Fruit</button>
+    </form>
+
+    <!-- Delete Form -->
+    <form id="delete-form">
+        <label for="delete-id">Fruit ID to Delete:</label>
+        <input type="text" id="delete-id" name="id" required>
+        <button type="submit">Delete Fruit</button>
+    </form>
+
+    <!-- Display Fruits -->
+    <div id="fruits-list">
+        <h2>Fruits List</h2>
+        <ul id="fruits"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
